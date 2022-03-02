@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mequi/Transactions/widgets/widgets.dart';
+import 'package:mequi/Utils/values/colors.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -8,7 +10,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: [_Header(), _OptionsHome()],
+        children: [
+          _Header(),
+          OptionsHome(),
+        ],
       ),
     );
   }
@@ -21,48 +26,40 @@ class _Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return Container(
-      height: 300,
-      color: Colors.red,
-    );
-  }
-}
-
-class _OptionsHome extends StatelessWidget {
-  const _OptionsHome({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 150,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          _ItemOptionsHome(sizes: [110, 120]),
-          _ItemOptionsHome(sizes: [110, 120]),
-          _ItemOptionsHome(sizes: [110, 120]),
-        ],
+      height: size.height * 0.55,
+      width: double.infinity,
+      child: CustomPaint(
+        painter: PurpleHeader(),
       ),
     );
   }
 }
 
-class _ItemOptionsHome extends StatelessWidget {
-  final List<double> sizes;
+class PurpleHeader extends CustomPainter {
+  @override
+  void paint(Canvas canvas, Size size) {
+    final path = Path();
+    final paint = Paint()
+      ..color = Color(colorPimary)
+      ..style = PaintingStyle.fill;
+    path.moveTo(size.width, 0);
+    path.lineTo(size.width, size.height * 0.8);
 
-  const _ItemOptionsHome({
-    Key? key,
-    required this.sizes,
-  }) : super(key: key);
+    path.quadraticBezierTo(size.width * 0.95, size.height * 0.85,
+        size.width * 0.85, size.height * 0.8);
+    path.lineTo(size.width * 0.2, size.height * 0.47);
+    path.quadraticBezierTo(size.width * 0.1, size.height * 0.42,
+        size.width * 0.15, size.height * 0.35);
+
+    path.lineTo(size.width * 0.3, size.height * 0.1);
+    path.lineTo(0, size.height * 0.1);
+    path.lineTo(0, 0);
+
+    canvas.drawPath(path, paint);
+  }
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: sizes[0],
-      height: sizes[1],
-      color: Colors.pink,
-    );
-  }
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
 }
