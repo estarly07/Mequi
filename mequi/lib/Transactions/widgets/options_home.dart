@@ -24,11 +24,11 @@ class OptionsHome extends StatelessWidget {
           name: "Colchón",
           icon: "assets/icons/ic_colchon.svg",
         ),
-        _ItemOptionsHome(
+        /* _ItemOptionsHome(
           width: size.width * 0.26,
           name: "Bolsillos",
           icon: "assets/icons/ic_bolsillo.svg",
-        ),
+        ), */
       ],
     );
   }

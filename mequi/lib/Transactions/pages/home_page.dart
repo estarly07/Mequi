@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mequi/Transactions/widgets/widgets.dart';
+import 'package:mequi/Transactions/pages/pages.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -8,12 +8,15 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
+      body: Stack(
         children: [
-          HeaderHome(),
-          OptionsHome(),
+          _navigation("page"),
         ],
       ),
     );
+  }
+
+  Widget _navigation(String page) {
+    return AccountPage();
   }
 }

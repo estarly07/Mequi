@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       },
       initialRoute: "/",
       theme: ThemeData.light().copyWith(
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: Color(colorScaffold),
         iconTheme: IconThemeData(color: Color(colorPimary)),
       ),
     );
