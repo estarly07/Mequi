@@ -84,11 +84,12 @@ class _HeaderPurple extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   _textInfo(
-                      "Disponible", "\$ 951.004,31", true, size.width * 0.05),
+                      "Disponible", "\$ 8.951.004,31", true, size.width * 0.05),
                   SizedBox(
                     height: size.height * 0.025,
                   ),
-                  _textInfo("Total", "\$ 951.004,31", false, size.width * 0.05),
+                  _textInfo(
+                      "Total", "\$ 8.951.004,31", false, size.width * 0.05),
                   SizedBox(
                     height: size.height * 0.025,
                   ),
@@ -143,8 +144,8 @@ class PurpleFigure extends CustomPainter {
     path.moveTo(size.width, 0);
     path.lineTo(size.width, size.height * 0.65);
 
-    path.quadraticBezierTo(size.width * 0.95, size.height * 0.75,
-        size.width * 0.85, size.height * 0.72);
+    path.quadraticBezierTo(size.width * 0.95, size.height * 0.71,
+        size.width * 0.85, size.height * 0.67);
     path.lineTo(size.width * 0.15, size.height * 0.42);
     path.quadraticBezierTo(size.width * 0.07, size.height * 0.37,
         size.width * 0.1, size.height * 0.28);

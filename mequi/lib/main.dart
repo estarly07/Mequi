@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
       statusBarColor: Color(colorPimary),
     ));
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Material App',
       routes: {
         "/": (_) => const HomePage(),

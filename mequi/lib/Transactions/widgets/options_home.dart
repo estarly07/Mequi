@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mequi/Utils/values/colors.dart';
 
 class OptionsHome extends StatelessWidget {
   const OptionsHome({
@@ -14,12 +16,18 @@ class OptionsHome extends StatelessWidget {
       children: [
         _ItemOptionsHome(
           width: size.width * 0.26,
+          name: "Metas",
+          icon: "assets/icons/ic_metas.svg",
         ),
         _ItemOptionsHome(
           width: size.width * 0.26,
+          name: "Colchón",
+          icon: "assets/icons/ic_colchon.svg",
         ),
         _ItemOptionsHome(
           width: size.width * 0.26,
+          name: "Bolsillos",
+          icon: "assets/icons/ic_bolsillo.svg",
         ),
       ],
     );
@@ -28,10 +36,14 @@ class OptionsHome extends StatelessWidget {
 
 class _ItemOptionsHome extends StatelessWidget {
   final double width;
+  final String name;
+  final String icon;
 
   const _ItemOptionsHome({
     Key? key,
     required this.width,
+    required this.name,
+    required this.icon,
   }) : super(key: key);
 
   @override
@@ -40,14 +52,18 @@ class _ItemOptionsHome extends StatelessWidget {
       width: width,
       child: Column(
         children: [
-          Icon(
-            Icons.adb_rounded,
-            size: width * 0.8,
+          SvgPicture.asset(
+            icon,
+            height: width * 0.6,
+            width: width * 0.6,
+          ),
+          SizedBox(
+            height: width * 0.2,
           ),
           Text(
-            "Hola",
+            name,
             textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 25),
+            style: TextStyle(fontSize: width * 0.2, color: Color(colorPimary)),
           )
         ],
       ),
