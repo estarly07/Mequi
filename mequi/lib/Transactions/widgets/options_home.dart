@@ -24,11 +24,11 @@ class OptionsHome extends StatelessWidget {
           name: "Colchón",
           icon: "assets/icons/ic_colchon.svg",
         ),
-        /* _ItemOptionsHome(
+        _ItemOptionsHome(
           width: size.width * 0.26,
           name: "Bolsillos",
           icon: "assets/icons/ic_bolsillo.svg",
-        ), */
+        ),
       ],
     );
   }
@@ -54,11 +54,11 @@ class _ItemOptionsHome extends StatelessWidget {
         children: [
           SvgPicture.asset(
             icon,
-            height: width * 0.6,
-            width: width * 0.6,
+            height: width * 0.5,
+            width: width * 0.5,
           ),
           SizedBox(
-            height: width * 0.2,
+            height: width * 0.15,
           ),
           Text(
             name,

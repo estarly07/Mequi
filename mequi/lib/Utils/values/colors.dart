@@ -1,5 +1,8 @@
 const int colorPimary = 0xff210049;
 const int colorPink = 0xfffe2f73;
+const int colorPinkLight = 0xfff9e8ee;
+const int colorButtonsBar = 0xffababab;
+
 const int colorBar = 0xffffffff;
 const int colorShadow = 0xffdfe6ee;
 const int colorScaffold = 0xfff7f7f7;

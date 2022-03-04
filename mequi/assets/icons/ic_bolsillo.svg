@@ -1,12 +1,1 @@
-<svg id="Capa_3" data-name="Capa 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.5 42.54">
-  <defs>
-    <style>
-      .cls-1,.cls-2,.cls-3,.cls-4{fill:none;stroke-miterlimit:10;}.cls-1,.cls-2{stroke:#251c47;}.cls-1,.cls-3{stroke-width:1.5px;}.cls-3,.cls-4{stroke:#e83874;}.cls-4{stroke-width:0.75px;}
-    </style>
-  </defs>
-  <path class="cls-1" d="M2.28 17.76h23.94a1.53 1.53 0 0 1 1.53 1.53v13.9a8.6 8.6 0 0 1-8.6 8.6h-9.8a8.6 8.6 0 0 1-8.6-8.6v-13.9a1.53 1.53 0 0 1 1.53-1.53Z"/>
-  <path class="cls-2" d="m1.74 23.25 1.98.09m2.43-.04h2.61m2.16 0h2.61m2.43 0h2.79m1.53 0h2.34m2.52 0h1.89"/>
-  <path class="cls-1" d="M7.54.75h13.14a1.93 1.93 0 0 1 1.93 1.93v15.08h-17V2.68A1.93 1.93 0 0 1 7.54.75Z"/>
-  <path class="cls-3" d="M112.77 391.19a2.37 2.37 0 0 0-1.82-.65 2.19 2.19 0 0 0-2 1.73 2.12 2.12 0 0 0 1.26 2.05 20.19 20.19 0 0 0 1.89.72 2.38 2.38 0 0 1 1.44 1.17 1.79 1.79 0 0 1-.16 1.59c-.63 1-2.19.94-3.13.63a3.46 3.46 0 0 1-1.59-1.1" transform="translate(-96.95 -385.32)"/>
-  <path class="cls-4" d="M14.25 3.14v12.24"/>
-</svg>
+<svg id="Capa_3" data-name="Capa 3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.5 42.54"><title>ic_bolsillo</title><path d="M2.28,17.76H26.22a1.53,1.53,0,0,1,1.53,1.53v13.9a8.6,8.6,0,0,1-8.6,8.6H9.35a8.6,8.6,0,0,1-8.6-8.6V19.29A1.53,1.53,0,0,1,2.28,17.76Z" fill="none" stroke="#251c47" stroke-miterlimit="10" stroke-width="1.5"/><line x1="1.74" y1="23.25" x2="3.72" y2="23.34" fill="none" stroke="#251c47" stroke-miterlimit="10"/><line x1="6.15" y1="23.3" x2="8.76" y2="23.3" fill="none" stroke="#251c47" stroke-miterlimit="10"/><line x1="10.92" y1="23.3" x2="13.53" y2="23.3" fill="none" stroke="#251c47" stroke-miterlimit="10"/><line x1="15.96" y1="23.3" x2="18.75" y2="23.3" fill="none" stroke="#251c47" stroke-miterlimit="10"/><line x1="20.28" y1="23.3" x2="22.62" y2="23.3" fill="none" stroke="#251c47" stroke-miterlimit="10"/><line x1="25.14" y1="23.3" x2="27.03" y2="23.3" fill="none" stroke="#251c47" stroke-miterlimit="10"/><path d="M7.54.75H20.68a1.93,1.93,0,0,1,1.93,1.93V17.76a0,0,0,0,1,0,0h-17a0,0,0,0,1,0,0V2.68A1.93,1.93,0,0,1,7.54.75Z" fill="none" stroke="#251c47" stroke-miterlimit="10" stroke-width="1.5"/><path d="M112.77,391.19a2.37,2.37,0,0,0-1.82-.65,2.19,2.19,0,0,0-2,1.73,2.12,2.12,0,0,0,1.26,2.05,20.19,20.19,0,0,0,1.89.72,2.38,2.38,0,0,1,1.44,1.17,1.79,1.79,0,0,1-.16,1.59c-.63,1-2.19.94-3.13.63a3.46,3.46,0,0,1-1.59-1.1" transform="translate(-96.95 -385.32)" fill="none" stroke="#e83874" stroke-miterlimit="10" stroke-width="1.5"/><line x1="14.25" y1="3.14" x2="14.25" y2="15.38" fill="none" stroke="#e83874" stroke-miterlimit="10" stroke-width="0.75"/></svg>
