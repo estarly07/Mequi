@@ -10,10 +10,11 @@ class Bar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+
     return Container(
       margin: EdgeInsets.symmetric(
         vertical: size.height * 0.02,
-        horizontal: size.height * 0.015,
+        horizontal: size.width * 0.0325,
       ),
       height: size.height * 0.075,
       decoration: BoxDecoration(
@@ -84,7 +85,7 @@ class _ItemsBarState extends State<_ItemsBar> {
         duration: const Duration(milliseconds: 270),
         curve: Curves.fastOutSlowIn,
         width: isSelect ? size.width * 0.35 : size.width * 0.1,
-        height: size.width * 0.1,
+        height: size.height * 0.046,
         decoration: isSelect
             ? BoxDecoration(
                 color: const Color(colorPinkLight),

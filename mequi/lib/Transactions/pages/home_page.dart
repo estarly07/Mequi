@@ -22,10 +22,15 @@ class HomePage extends StatelessWidget {
                 Container(
                   margin: EdgeInsets.only(
                     bottom: size.height * 0.005,
-                    right: size.height * 0.035,
+                    right: size.width * 0.075,
                   ),
                   child: FloatingActionButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).push(PageRouteBuilder(
+                          opaque: false,
+                          pageBuilder: (context, animation, secondAnimation) =>
+                              DialogTransactions()));
+                    },
                     elevation: 10.5,
                     child: Icon(Icons.attach_money_sharp),
                     backgroundColor: Color(colorPink),
