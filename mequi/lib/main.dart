@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:mequi/Transactions/pages/pages.dart';
 import 'package:mequi/Utils/preferences.dart';
+import 'package:mequi/Utils/values/routes.dart';
 import 'package:mequi/Utils/values/values.dart';
 
 late Preferences preferences;
@@ -25,9 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      routes: {
-        "/": (_) => const HomePage(),
-      },
+      routes: routes,
       initialRoute: "/",
       theme: ThemeData.light().copyWith(
         scaffoldBackgroundColor: Color(colorScaffold),

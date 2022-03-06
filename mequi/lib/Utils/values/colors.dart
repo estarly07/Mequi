@@ -7,6 +7,7 @@ const int colorButtonsBar = 0xffababab;
 
 const int colorBar = 0xffffffff;
 const int colorShadow = 0xffdfe6ee;
+const int colorShadowBlack = 0xff000000;
 const int colorScaffold = 0xfff7f7f7;
 const int textPrimaryWhite = 0xffffffff;
 const int textSecondaryWhite = 0xffD6D6D6;

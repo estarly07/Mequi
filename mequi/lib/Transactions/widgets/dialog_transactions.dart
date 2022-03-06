@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:mequi/Transactions/pages/home_page.dart';
 import 'package:mequi/Transactions/widgets/bar.dart';
 import 'package:mequi/Utils/values/colors.dart';
 
@@ -82,31 +83,39 @@ class _DialogTransactionsState extends State<DialogTransactions>
 
   Widget floating(String title, IconData icon, Size size) => Container(
         margin: EdgeInsets.only(bottom: size.width * 0.06),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: [
-            Text(title,
-                style: TextStyle(
-                  fontSize: size.width * 0.045,
-                  color: const Color(textPrimaryWhite),
+        child: GestureDetector(
+          onTap: () {
+            _controller.reverse().then((value) {
+              Navigator.of(context).pop();
+              HomePage.callback(title, context);
+            });
+          },
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Text(title,
+                  style: TextStyle(
+                    fontSize: size.width * 0.045,
+                    color: const Color(textPrimaryWhite),
+                  )),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: size.width * 0.025),
+                width: size.width * 0.065,
+                height: size.width * 0.065,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Color(colorPink),
+                ),
+                child: Center(
+                    child: Icon(
+                  icon,
+                  color: const Color(colorBar),
+                  size: size.width * 0.04,
                 )),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: size.width * 0.025),
-              width: size.width * 0.065,
-              height: size.width * 0.065,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                color: Color(colorPink),
               ),
-              child: Center(
-                  child: Icon(
-                icon,
-                color: const Color(colorBar),
-                size: size.width * 0.04,
-              )),
-            ),
-          ],
+            ],
+          ),
         ),
       );
 }

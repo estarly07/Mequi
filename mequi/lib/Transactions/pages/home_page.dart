@@ -7,6 +7,25 @@ import 'package:mequi/Utils/values/colors.dart';
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
+  static callback(String typeTransaction, BuildContext context) {
+    switch (typeTransaction) {
+      case "Envía":
+        showDialogSheet(
+            context: context,
+            items: [
+              ["assets/icons/ic_two_person.svg", "Nequi", "Número de cel"],
+            ],
+            title: "Opciones para enviar",
+            callback: (String type, BuildContext context) {
+              print(type);
+              Navigator.pushNamed(context, "transaction_sent");
+            });
+
+        break;
+      default:
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
