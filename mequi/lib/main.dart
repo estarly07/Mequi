@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:mequi/Transactions/pages/pages.dart';
+import 'package:mequi/Utils/preferences.dart';
 import 'package:mequi/Utils/values/values.dart';
 
-void main() => runApp(MyApp());
+late Preferences preferences;
+void main() async {
+//ESPERAR QUE ALGO INICIALIZE POR EJEMPLO LAS PREFERENCIAS
+  WidgetsFlutterBinding.ensureInitialized();
+
+  preferences = Preferences();
+  await preferences.initPreferences();
+
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
