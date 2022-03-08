@@ -1,3 +1,4 @@
+import 'package:contacts_service/contacts_service.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mequi/Transactions/pages/pages.dart';
@@ -44,11 +45,13 @@ class HomePage extends StatelessWidget {
                     right: size.width * 0.075,
                   ),
                   child: FloatingActionButton(
-                    onPressed: () {
-                      Navigator.of(context).push(PageRouteBuilder(
+                    onPressed: () async {
+                      print((await ContactsService.getContacts()).toList());
+
+/*                       Navigator.of(context).push(PageRouteBuilder(
                           opaque: false,
                           pageBuilder: (context, animation, secondAnimation) =>
-                              DialogTransactions()));
+                              DialogTransactions())); */
                     },
                     elevation: 10.5,
                     child: Icon(Icons.attach_money_sharp),
